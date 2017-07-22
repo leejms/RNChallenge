@@ -1,15 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+
+// OURS
+import followers from './src/reducers'
+import Nav from './src/containers/Navigator'
+
+let store = createStore(followers)
+console.log('[STORE]', store.getState())
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
+      <Provider store={store}>
+        <Nav />
+      </Provider>
+    )
   }
 }
 
@@ -20,4 +27,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
