@@ -10,10 +10,10 @@ import SubTitle from '../../text/RowSubtitle'
 const Theme = require('../../../styles')
 
 // create a component
-const PersonRow = ({title, subtitle}) => {
+const PersonRow = ({title, subtitle, avatar}) => {
     return (
         <View style={styles.container}>
-            <Avatar/>
+            <Avatar src={'../../../' + avatar}/>
             <View style={styles.textContainer}>
                 <Title>{title}</Title>
                 <SubTitle>{subtitle}</SubTitle>

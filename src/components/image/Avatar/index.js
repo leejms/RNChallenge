@@ -1,12 +1,12 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 
 // create a component
-const Avatar = () => {
+const Avatar = ({src}) => {
     return (
         <View style={styles.container}>
-            <Text>Avatar</Text>
+            <Image source={{uri:src}}/>
         </View>
     );
 };

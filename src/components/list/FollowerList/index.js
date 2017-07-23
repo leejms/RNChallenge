@@ -13,6 +13,7 @@ const FollowerList = ({recommended}) => {
           avatar={item.image}
           title={item.name}
           subtitle={item.description}
+          avatar={item.image}
         />
      )
 
