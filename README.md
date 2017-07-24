@@ -2,7 +2,7 @@
 
 ### install instructions:
 ```
-git clone ...
+git clone https://github.com/leejms/RGChallenge.git
 yarn
 yarn run ios
 ```
