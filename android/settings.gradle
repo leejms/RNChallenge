@@ -1,0 +1,3 @@
+rootProject.name = 'RGChallenge'
+
+include ':app'
