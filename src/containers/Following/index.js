@@ -1,3 +1,11 @@
+/**
+ * Following
+ * 
+ * Container displaying people that ARE currently being followed
+ * This container was not part of the challenge, it just seemed silly
+ * for items to dissappear off of the FollowerSuggestions list and not
+ * be able to retrieve them
+ */
 //import liraries
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
@@ -22,7 +30,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     follow: (id) => {
       dispatch(toggleFollow(id))
-      console.log('unfollow:', id)
     }
   }
 }

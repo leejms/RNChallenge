@@ -1,3 +1,9 @@
+/**
+ * FollowerSuggestions
+ * 
+ * Container displaying people NOT currently being followed
+ */
+
 //import liraries
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
@@ -11,6 +17,7 @@ const Theme = require('../../styles/')
 import FollowerList from '../../components/list/FollowerList'
 
 // pass data from redux down to the components
+// filter out the people already being followed
 const mapStateToProps = (state, ownProps) => {
   return {
     followers: _.filter(state.followers, (follower) => !follower.following)
@@ -18,11 +25,11 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 // map children component actions to redux actions
+// this will dispatch the toggleFollow action and TOGGLE_FOLLOW reducer
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     follow: (id) => {
       dispatch(toggleFollow(id))
-      console.log('follow:', id)
     }
   }
 }

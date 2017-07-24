@@ -1,3 +1,10 @@
+/**
+ * Root StyleGuide
+ * 
+ * define application scoped style constants like app colors and 
+ * text styles
+ */
+
 import { StyleSheet } from 'react-native'
 
 // Color palette
@@ -10,17 +17,16 @@ export const colors = {
 }
 
 // Text styles
-// TODO: import Roboto and use it
 export const textStyles = StyleSheet.create({
 	titleText: {
 		fontFamily: "Roboto-Regular",
 		fontSize: 16,
-        color: colors.black,
-        fontWeight: 'bold'
+    color: colors.black,
+    fontWeight: 'bold'
 	},
 	subtitleText: {
 		fontFamily: "Roboto-Regular",
-		fontSize: 17,
+		fontSize: 14,
 		color: colors.greyish
 	},
 	buttonText: {
