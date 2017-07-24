@@ -23,6 +23,7 @@ const Theme = require('../../../styles')
 
 // create a component
 const PersonRow = ({title, subtitle, avatar, following, follow}) => {
+  
   return (
     <View style={styles.container}>
       <Avatar src={avatar}/>
