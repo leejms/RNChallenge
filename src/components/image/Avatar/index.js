@@ -2,11 +2,13 @@
 import React, { Component } from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
+const urlPrefix = 'https://s3-us-west-2.amazonaws.com/rgchallenge/'
+
 // create a component
 const Avatar = ({src}) => {
     return (
         <View style={styles.container}>
-            <Image source={{uri:src}}/>
+            <Image style = {styles.image} source={{uri:src}}/>
         </View>
     );
 };
@@ -20,6 +22,11 @@ const styles = StyleSheet.create({
         width: 60,
         height: 60
     },
+    image: {
+        width: 60,
+        height: 60,
+        borderRadius: 30
+    }
 });
 
 //make this component available to the app

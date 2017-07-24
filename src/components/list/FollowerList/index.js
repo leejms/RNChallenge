@@ -6,7 +6,7 @@ import {View, Text, FlatList, StyleSheet} from 'react-native';
 import PersonRow from '../../row/PersonRow'
 
 // create a component
-const FollowerList = ({recommended}) => {
+const FollowerList = ({followers, follow}) => {
 
      renderItem = ({item}) => (
         <PersonRow
@@ -14,6 +14,8 @@ const FollowerList = ({recommended}) => {
           title={item.name}
           subtitle={item.description}
           avatar={item.image}
+          following={item.following}
+          follow={()=>follow(item.id)}
         />
      )
 
@@ -21,7 +23,7 @@ const FollowerList = ({recommended}) => {
     
     return (
       <FlatList
-        data={recommended}
+        data={followers}
         //extraData={this.state}
         keyExtractor={this.keyExtractor}
         renderItem={this.renderItem}
