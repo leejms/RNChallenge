@@ -19,7 +19,6 @@ import PersonRow from '../../row/PersonRow'
 const FollowerList = ({followers, follow}) => {
 
   renderItem = ({item}) => (<PersonRow
-    avatar={item.image}
     title={item.name}
     subtitle={item.description}
     avatar={item.image}

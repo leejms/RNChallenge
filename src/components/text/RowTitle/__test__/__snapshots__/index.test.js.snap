@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#000000",
+        "fontFamily": "Roboto-Regular",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Test
+  </Text>
+</View>
+`;
