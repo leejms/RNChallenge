@@ -9,6 +9,7 @@ npm install -g react-native-cli
 ### challenge install instructions:
 ```
 git clone https://github.com/leejms/RGChallenge.git
+cd RGChallenge
 yarn
 yarn run ios
 ```
