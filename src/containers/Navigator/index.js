@@ -18,7 +18,7 @@ const Navigator = StackNavigator({
     screen: FollowerSuggestions,
     // Optional: Override the `navigationOptions` for the screen
     navigationOptions: ({navigation}) => ({
-      title: 'ResearchGate Challenge',
+      title: 'React Native Challenge',
       // Render a button on the right side of the header. When pressed switches the
       // screen to edit mode.
       headerRight: (<Button title='Edit' onPress={() => navigation.navigate('Following')}/>),
