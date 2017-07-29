@@ -1,4 +1,4 @@
-## ResearchGate Challenge
+## React Native Challenge
 
 ### be sure you have the prereqs installed
 ```
